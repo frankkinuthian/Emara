@@ -886,13 +886,13 @@
            // Construct the inner HTML for the product item
           productItem.innerHTML = `
             <div class="image-holder">
-              <img src="${product.imageUrl}" alt="Product" class="product-image" />
+              <img src="${element.image}" alt="Product" class="product-image" />
             </div>
             <div class="product-detail">
               <h3 class="product-title">
-                <a href="single-product.html">${product.title}</a>
+                <a href="single-product.html">${element.title}</a>
               </h3>
-              <div class="item-price text-primary">${product.price}</div>
+              <div class="item-price text-primary">${element.price}</div>
             </div>
           `;
           allDiv.appendChild(productItem);
