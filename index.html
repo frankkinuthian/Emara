@@ -544,25 +544,23 @@
                   >	
                     <button	
                       type="button"	
-                      onclick="window.open('https://wa.me/254721227896?text=I%20am%20interested%20in%20your%20product', '_blank')"
+                      onclick="window.open('https://wa.me/254721227896?text=hello%20iam%20interested%20in%20r%20product%0A' +  
+                      '*' + "Product name: " + ${element.title} +  "*"  +
+                      '*' + "Price: " + ${element.price} +  "*"  +
+                      '*' + "size: " + ${element.size} +  "*" +
+                        , '_blank')"
                       class="btn-wrap cart-link d-flex align-items-center"	
                     >	
                       order on whatsapp <i class="icon icon-whatsapp"></i>	
                     </button>	
-                    <button type="button" class="view-btn tooltip d-flex">	
-                      <i class="icon icon-screen-full"></i>	
-                      <span class="tooltip-text">Quick view</span>	
-                    </button>	
-                    <button type="button" class="wishlist-btn">	
-                      <i class="icon icon-heart"></i>	
-                    </button>	
+                   
                   </div>	
               </div>
             <div class="product-detail">
               <h3 class="product-title">
                 <a href="single-product.html">${element.title}</a>
               </h3>
-              <div class="item-price text-primary">${element.price}</div>
+              <div class="item-price text-primary"> KES ${element.price}  </div>
             </div>
           `;
           allDiv.appendChild(productItem);
