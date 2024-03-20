@@ -885,6 +885,8 @@ fieldset[disabled] a.btn {
 ------------------------------------------------------------- */
 .btn-wrap {
   font-weight: 500;
+  background-color: rgb(60, 249, 60);
+  color: #fff;
   text-transform: capitalize;
   width: fit-content;
 }
