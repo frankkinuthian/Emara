@@ -2606,6 +2606,16 @@ a.blog-categories:hover {
   border-radius: 0;
   border: 1px solid var(--grey-color);
 }
+.image-holder {
+  width: 200px; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  overflow: hidden; /* Hide any overflow if the image is larger than the container */
+}
+.image-holder img {
+  width: 100%; /* Make the image fill the container horizontally */
+  height: 100%; /* Make the image fill the container vertically */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
 
 /* 7.3 Shop Page & Blog Page
 --------------------------------------------------------------*/
