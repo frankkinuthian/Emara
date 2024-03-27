@@ -528,10 +528,27 @@
     <script>
       const parser = new PublicGoogleSheetsParser('1sscHUuLc9v3A1lTAR0UbffdVJGB6LLyyFtPC8WeC6o8')
       const allDiv = document.getElementById('allitems'); 
+
+   
+
+
+
+
       parser.parse().then(data => {
-         data.forEach(element => { 
+        data.forEach(element => { 
           const productItem = document.createElement('div');
           productItem.className = 'product-item col-lg-3 col-md-6 col-sm-6'; 
+
+
+
+          const message = `*Product Details:*\n\n` +
+                    `*Product Name:* ${element.title}\n` +
+                    `*Price:* ${element.price}\n\n` +
+                    `I am interested in the following  Carpet`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `'https://wa.me/254721227896?text=${encodedMessage}'`;
+
 
            // Construct the inner HTML for the product item
           productItem.innerHTML = `
@@ -544,11 +561,7 @@
                   >	
                     <button	
                       type="button"	
-                      onclick="window.open('https://wa.me/254721227896?text=hello%20iam%20interested%20in%20r%20product%0A' +  
-                      '*' + "Product name: " + ${element.title} +  "*"  +
-                      '*' + "Price: " + ${element.price} +  "*"  +
-                      '*' + "size: " + ${element.size} +  "*" +
-                        , '_blank')"
+                      onclick="window.open(${whatsappUrl}, '_blank')"
                       class="btn-wrap cart-link d-flex align-items-center"	
                     >	
                       order on whatsapp <i class="icon icon-whatsapp"></i>	
