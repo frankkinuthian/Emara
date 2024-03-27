@@ -91,7 +91,11 @@
     });
 
     var swiper = new Swiper(".main-swiper", {
-      speed: 500,
+      speed:800,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false
+     },
       loop: true,
       navigation: {
         nextEl: ".button-next",
@@ -104,12 +108,13 @@
     });
 
     var swiper = new Swiper(".two-column-swiper", {
-      speed: 500,
+      speed: 100,
       loop: true,
       navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
       },
+     
     });
 
     var swiper = new Swiper("#featured-products .product-swiper", {
