@@ -1334,12 +1334,26 @@ blockquote cite {
 /*--------------------------------------------------------------
 /** 4.1 General Tabs
 --------------------------------------------------------------*/
+
+.main-logo {
+  background-color: transparent;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+   
+   
+}
+
+
+
 .nav {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: transparent;
+  
 }
 .nav-link {
   display: block;
@@ -1684,10 +1698,12 @@ blockquote cite {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 768px) {
-  .header-contact,
-  .shipping-purchase {
-    display: none;
-  }
+
+ /* .shipping-purchase */
+    .header-contact {
+      display: none;
+    }
+
 }
 
 /* submenu */
