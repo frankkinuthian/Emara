@@ -132,8 +132,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: "Inter", sans-serif;
-  --heading-font: "Inter", sans-serif;
+  --body-font: "Lato-light", sans-serif;
+  --heading-font: "Lato", sans-serif;
 }
 
 /*----------------------------------------------*/
