@@ -2093,7 +2093,7 @@ blockquote cite {
   background: var(--light-color);
   border: 1px solid var(--grey-color);
   border-radius: 6px;
-  padding: 10px;
+  padding: 0px;
   cursor: pointer;
   margin-bottom: 20px;
   width: 100%;
@@ -2136,9 +2136,11 @@ i.icon.icon-arrow-io {
 .product-item h3.product-title {
   font-size: 1.4em;
   margin: 0;
+  text-align: center;
 }
 .product-item .item-price {
   font-size: 1.8em;
+  text-align: center;
 }
 .swiper.product-swiper {
   position: relative;
